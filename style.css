@@ -1,0 +1,190 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9eee4, #f6ceab);
+    color:#862600;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    /* background: linear-gradient(145deg, #ffffff, #e6e6e6); */
+    background: linear-gradient(135deg, #ffd6b7,#ff994a );
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(145, 75, 0, 0.5);
+    animation: fadeIn 1s ease-out;
+}
+
+.resume-container h1 {
+    font-size: 2.4em;
+    color:  #862600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff7300;
+    padding-bottom: 10px;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid  #ff7300;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    border-color: #9b4600;
+}
+
+.header-info {
+    flex: 1;
+}
+
+.header-info h1 {
+    margin: 0;
+    font-size: 2.8em;
+    /* color:  #ff7300; */
+    color:  #9b4600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 1px 1px 2px  #b09c8c;
+}
+
+.header-info h1:hover {
+    color:  #df3f00;
+    text-shadow: 1px 1px 3px  #a83000;
+}
+
+.header-info p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color:  #9b4600;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #fff0e2, #f9c291);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.resume-section:hover {
+    background: linear-gradient(145deg, #ffe8de, #ffb578);
+    transform: scale(1.02);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.resume-section h2 {
+    font-size: 2.2em;
+    color: #9b4600;
+    border-bottom: 3px solid #9b4600;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    transition: border-bottom 0.3s ease;
+}
+
+.resume-section h2:hover {
+    border-bottom: 3px solid #9b4600;
+}
+
+.resume-section p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.resume-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-section ul li {
+    background: #edb68a;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.resume-section ul li:hover {
+    background: #9b4600;
+    transform: translateX(5px);
+    color: #fff;
+}
+
+
+.toggle-btn {
+    background: #9b4600;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background: #df3f00;
+    transform: scale(1.05);
+}
+
+.resume-footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#862600;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resume-container, .resume-section {
+    animation: fadeInUp 1s ease-out;
+}

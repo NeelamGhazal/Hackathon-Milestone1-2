@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="resume-container">
+
+        <h1>Milestone 1: Static Interactive Resume Builder</h1>
+        <br>
+        
+        <div class="resume-header">
+
+            <img src="Image 2024-09-08 at 8.04.10 AM.jpeg" alt="Profile Picture" class="profile-pic">
+
+                <div class="header-info">
+                    <h1 style="text-align: left;">Neelam Ghazal</h1>
+                    <p>Email: neelamansari907@gmail.com</p>
+                    <p>Phone: 0312-1234567</p>
+                </div>
+
+        </div>
+
+
+        <div class="resume-section" id="educationSection">
+
+            <div class="section-header">
+                <h2>Education</h2>
+                <button class="toggle-btn" onclick="toggleVisibility('educationContent')">Toggle</button>
+            </div>
+
+            <div id="educationContent">
+                <p>BS in Computer Science, Karachi University, 2018-2022</p>
+                <p>MS in Artificial Intelligence, Karachi University, 2022-2024</p>
+            </div>
+
+        </div>
+
+        <div class="resume-section" id="experienceSection">
+
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <button class="toggle-btn" onclick="toggleVisibility('experienceContent')">Toggle</button>
+            </div>
+
+            <div id="experienceContent">
+                <p>Software Engineer at Sybrid Private Limited Company (2022-Present)</p>
+                <p>Intern at Salsoft Technologies (2020-2021)</p>
+            </div>
+
+        </div>
+
+
+        <div class="resume-section" id="skillsSection">
+
+            <div class="section-header">
+                <h2>Skills</h2>
+                <button class="toggle-btn" onclick="toggleVisibility('skillsContent')">Toggle</button>
+            </div>
+
+            <div id="skillsContent">
+
+                <ul>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>CSS</li>
+                    <li>Node.js</li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    
+
+    <script src="script.js"></script>
+
+    <footer class="resume-footer">
+        <p>&copy; 2024 Created By Ghazal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
